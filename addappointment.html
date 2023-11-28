@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<!-- Basic Page Info -->
+
+<head>
+	<!-- Basic Page Info -->
 	<meta charset="utf-8" />
 	<title>Doctor_dashboard</title>
 
@@ -21,27 +23,13 @@
 	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/dataTables.bootstrap4.min.css" />
 	<link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
-<body>
-	<!-- <div class="pre-loader">
-		<div class="pre-loader-box">
-			<div class="loader-logo">
-				<img src="vendors/images/brandLogo.svg" alt="" />
-			</div>
-			<div class="loader-progress" id="progress_div">
-				<div class="bar" id="bar1"></div>
-			</div>
-			<div class="percent" id="percent1">0%</div>
-			<div class="loading-text">Loading...</div>
-		</div>
-	</div> -->
+</head>
 
+<body>
+	
 	<div class="header">
-		
-		
 		<div class="header-left">
-			
 			<div class="menu-icon bi bi-list"></div>
-			
 			<h3 style="font-family: Inter; margin-left: 50px; color:#1B00FF;">Doctor Dashboard</h3>
 			<div class="dashboard-setting user-notification">
 			</div>
@@ -177,18 +165,14 @@
 
 	<div class="left-side-bar">
 		<div class="brand-logo">
-			<a href="admin_dash.html">
-				<img src="vendors/images/brandLogo.svg" alt="" class="dark-logo" />
+			<a href="admin_dash.jsp">
+				<img src="vendors/images/logo 1.png" alt="" class="dark-logo" />
 				<img src="vendors/images/deskapp-logo-white.svg" alt="" class="light-logo" />
 			</a>
 			<div class="close-sidebar" data-toggle="left-sidebar-close">
 				<i class="ion-close-round"></i>
 			</div>
 		</div>
-
-
-		<!-- Sidebar -->
-
 
 		<div class="menu-block customscroll">
 			<div class="sidebar-menu">
@@ -212,17 +196,6 @@
 						</ul>
 					</li>
 
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon bi bi-calendar-event"></span><span class="mtext">Appointments</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="./viewappointment.html"></a></li>
-							<li><a href="./addappointment.html">Add Appointment</a></li>
-	
-						</ul>
-					</li>
-
 
 
 
@@ -232,33 +205,69 @@
 	</div>
 	<div class="mobile-menu-overlay"></div>
 
+
+		
 	<div class="main-container">
 		<div class="pd-ltr-20">
 			<div class="card-box pd-20 height-100-p mb-30">
-				<div class="row align-items-center">
-					<div class="col-md-4">
-						<img src="vendors/images/banner-img.png" alt="" />
+				<h2 style="margin-bottom:50px; margin-left:10px">Add Patient Appointment</h2>			
+			
+				<form action="AddSchool" method="post">
+					<div class="form-group row">
+						<label class="col-sm-12 col-md-2 col-form-label">Patient Name</label>
+						<div class="col-sm-12 col-md-10">
+							<input class="form-control" name="name" type="text" placeholder="name">
+						</div>
 					</div>
-					<div class="col-md-8">
-						<h4 class="font-20 weight-500 mb-10 text-capitalize">
-							Welcome back
-							<div class="weight-600 font-30 text-blue">Doctor</div>
-						</h4>
-						<p class="font-18 max-width-850">
-							The admin dashboard empowers you to efficiently manage schools and suppliers. You can add and view school profiles, while suppliers handle meal updates. Approve and assign requirements to suppliers seamlessly, track raised complaints from schools, generate comprehensive reports for connected schools and suppliers, and curate a gallery of relevant content for easy access.
-						</p>
+					
+					<div class="form-group row">
+						<label class="col-sm-12 col-md-2 col-form-label">Age</label>
+						<div class="col-sm-12 col-md-10">
+							<input class="form-control" name="email"  type="email" placeholder="age">
+						</div>
+
 					</div>
-				</div>
+
+
+                    <div class="form-group row">
+						<label class="col-sm-12 col-md-2 col-form-label">Gender</label>
+						<div class="col-sm-12 col-md-10">
+							<input class="form-control" name="contactno" type="text" placeholder="district">
+						</div>
+					</div>
+                    <div class="form-group row">
+						<label class="col-sm-12 col-md-2 col-form-label"> Mobile No</label>
+						<div class="col-sm-12 col-md-10">
+							<input class="form-control" name="username" placeholder="username" type="username">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-12 col-md-2 col-form-label">Email</label>
+						<div class="col-sm-12 col-md-10">
+							<input class="form-control" name="password"  type="password" placeholder="email">
+						</div>
+					</div>
+				
+					<div class="form-group row">
+						<label class="col-sm-12 col-md-2 col-form-label">Town/Village</label>
+						<div class="col-sm-12 col-md-10">
+							<input class="form-control" name="village" type="text" placeholder="town/district">
+						</div>
+					</div> 
+
+                    <div class="form-group row">
+						<label class="col-sm-12 col-md-2 col-form-label">Date/Day</label>
+						<div class="col-sm-12 col-md-10">
+							<input class="form-control" name="village" type="datetime-local" placeholder="town/district">
+						</div>
+					</div> 
+
+
+
+
+					<input style="margin-left:50%;" class="btn btn-primary" type="submit" value="Submit">
+				</form> 
 			</div>
-			
-			<div class="card-box pd-20 height-100-p mb-30">
-				<div class="row align-items-center">
-					<img src="vendors/images/main_poster.png" alt="" />
-				</div>
-			</div>
-			
-			
-			
 			
 					
 		</div>
@@ -277,4 +286,5 @@
 	<script src="vendors/scripts/dashboard.js"></script>
 
 </body>
+
 </html>
